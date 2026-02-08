@@ -1,0 +1,20 @@
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.home h3 {
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.home p {
+  margin-bottom: 25px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
