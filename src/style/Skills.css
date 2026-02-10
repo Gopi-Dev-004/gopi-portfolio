@@ -10,12 +10,21 @@
 }
 
 .skill-card {
+  background-color: #f8fafc;
   padding: 20px;
   border-radius: 8px;
-  background-color: #f8fafc;
+  text-align: left;
 }
 
 .skill-card h3 {
   color: #2563eb;
   margin-bottom: 10px;
+}
+
+.skill-card ul {
+  padding-left: 20px;
+}
+
+.skill-card ul li {
+  margin-bottom: 6px;
 }
