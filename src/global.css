@@ -6,6 +6,7 @@
 
 /* ===== BODY (Main Background) ===== */
 body {
+  overflow-x: hidden;
   font-family: 'Inter', Arial, sans-serif;
   background: #0f0f0f;
   /* Deep black */
