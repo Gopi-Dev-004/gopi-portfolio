@@ -15,7 +15,7 @@ export default function useScrollReveal({ once = false } = {}) {
           setIsVisible(false);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.15 }
     );
 
     if (ref.current) observer.observe(ref.current);
