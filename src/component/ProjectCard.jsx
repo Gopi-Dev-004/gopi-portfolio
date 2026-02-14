@@ -1,5 +1,9 @@
+
+
 function ProjectCard({ project }) {
+  
   return (
+
     <div className="project-card">
       <h3>{project.title}</h3>
 
@@ -15,9 +19,11 @@ function ProjectCard({ project }) {
 
       <div className="project-links">
         <a href={project.github} target="_blank">GitHub</a>
-        {project.demo && (
-          <a href={project.demo} target="_blank">Live Demo</a>
-        )}
+        {
+          project.demo && (
+
+            <a href={project.demo} target="_blank">Live Demo</a>
+          )}
       </div>
     </div>
   );

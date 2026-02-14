@@ -1,10 +1,19 @@
 
 
 import "../style/Education.css";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function Education() {
+
+  const { ref, isVisible } = useScrollReveal();
+
   return (
-    <section className="section education">
+    
+    <section
+      id="education"
+      ref={ref}
+      className={`section education reveal reveal-left ${isVisible ? "active" : ""}`}
+    >
       <h2 className="section-title">Education</h2>
 
       <div className="edu-item">
@@ -18,3 +27,4 @@ function Education() {
 }
 
 export default Education;
+

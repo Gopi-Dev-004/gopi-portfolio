@@ -4,47 +4,83 @@
   box-sizing: border-box;
 }
 
+/* ===== BODY (Main Background) ===== */
 body {
-  font-family: Arial, sans-serif;
-  background: #fff;
-  color: #222;
-  line-height: 1.6;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #0f0f0f;
+  /* Deep black */
+  color: #ffffff;
+  /* White text */
+  line-height: 1.7;
+  scroll-behavior: smooth;
+  padding-top: 80px;
 }
 
+/* ===== SECTION ===== */
 .section {
-  padding: 60px 10%;
+  padding: 100px 10%;
+  background: transparent;
 }
 
+/* Alternate section subtle dark */
+.section:nth-child(even) {
+  background: #141414;
+  /* Slight dark contrast */
+}
+
+/* Container */
 .container {
   max-width: 1200px;
   margin: auto;
 }
 
+/* ===== HEADINGS ===== */
+h1,
+h2,
+h3,
+h4 {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraphs */
+p {
+  color: #a1a1aa;
+  /* Soft gray */
+}
+
+/* ===== BUTTON ===== */
 .btn {
-  padding: 10px 20px;
-  background: #2563eb;
-  color: white;
+  padding: 12px 24px;
+  background: #8b5cf6;
+  /* Accent purple */
+  color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .btn:hover {
-  background: #1e40af;
+  background: #7c3aed;
+  transform: translateY(-2px);
 }
 
-ul {
-  list-style: none;
-}
-
+/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Lists */
+ul {
+  list-style: none;
+}
+
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
   .section {
-    padding: 40px 5%;
+    padding: 80px 5%;
   }
 }

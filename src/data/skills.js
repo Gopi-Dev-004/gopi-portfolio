@@ -4,21 +4,21 @@ export const skills = [
   {
     id: 1,
     category: "Frontend",
-    items: ["HTML", "CSS", "JavaScript", "React (Basic)"],
+    items: ["HTML", "CSS", "JavaScript", "React"],
   },
   {
     id: 2,
     category: "Backend",
-    items: ["Java", "Spring Boot", "REST APIs"],
+    items: ["Java", "Spring", "Spring Boot", "REST APIs", "Node.js (basic)", "Python (basic)"],
   },
   {
     id: 3,
     category: "Database",
-    items: ["MySQL", "SQL"],
+    items: ["SQL", "MySQL", "NoSQL", "MongoDB (basic)", "ACID"],
   },
   {
     id: 4,
-    category: "Tools",
-    items: ["Git", "GitHub", "Postman", "Maven"],
+    category: "Tools & DevOps",
+    items: ["Git & GitHub", "Postman", " CI/CD ", " SDLC", "MVC", "Troubleshooting"],
   },
 ];

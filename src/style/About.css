@@ -1,15 +1,85 @@
+/* =========================
+   ABOUT - BLACK PREMIUM
+========================= */
+
 .about {
-  text-align: center;
+  padding: 120px 10%;
+  background: #0b0f19;
 }
 
-.section-title {
-  font-size: 32px;
+/* Container */
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT SIDE TEXT */
+.about-left h2 {
+  font-size: 42px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.about-left p {
+  color: #9ca3af;
+  line-height: 1.8;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
-.about-text {
-  max-width: 700px;
-  margin: 0 auto 15px;
-  font-size: 16px;
-  line-height: 1.7;
+/* RIGHT SIDE CARD */
+.about-right {
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  background: #111827;
+  padding: 40px;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+  width: 100%;
+}
+
+.about-card h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-card li {
+  margin-bottom: 15px;
+  color: #d1d5db;
+  font-size: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Clean bullet style */
+.about-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about {
+    padding: 80px 5%;
+  }
 }

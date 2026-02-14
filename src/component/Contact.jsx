@@ -2,37 +2,64 @@
 
 import "../style/Contact.css";
 import { contactInfo } from "../data/contact";
+import useScrollReveal from "../hooks/useScrollReveal";
 
 function Contact() {
+
+  const { ref, isVisible } = useScrollReveal();
+
   return (
-    <section className="section contact" id="contact">
-      <h2 className="section-title">Contact</h2>
+
+    <section
+      id="contact"
+      ref={ref}
+      className={`section contact  reveal reveal-right ${isVisible ? "active" : ""}`}
+    >
+      <h2 className="section-title">Get In Touch</h2>
+      <p className="contact-subtitle">
+        Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+      </p>
 
       <div className="contact-container">
 
-        {/* Contact Info */}
+        {/* LEFT SIDE */}
         <div className="contact-info">
-          {contactInfo.map((item) => (
-            <p key={item.id}>
-              <strong>{item.label}:</strong>{" "}
-              <a href={item.link} target="_blank">
-                {item.value}
+
+          <h3 className="info-title">Contact Information</h3>
+
+          <div className="contact-buttons">
+            {contactInfo.map((item) => (
+              <a
+                key={item.id}
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="contact-btn"
+              >
+                {item.label}
               </a>
-            </p>
-          ))}
+            ))}
+          </div>
+
         </div>
 
-        {/* Contact Form */}
+
+        {/* RIGHT SIDE FORM */}
         <form className="contact-form">
+          <h3>Send Me a Message</h3>
+
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <textarea placeholder="Your Message"></textarea>
+
           <button className="btn">Send Message</button>
         </form>
 
       </div>
     </section>
+
   );
 }
 
 export default Contact;
+
