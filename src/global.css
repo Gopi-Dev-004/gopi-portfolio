@@ -1,57 +1,41 @@
-/* =========================
-   RESET
-========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   HTML & BODY
-========================= */
-html {
-  scroll-behavior: smooth;
-}
-
-html,
+/* ===== BODY (Main Background) ===== */
 body {
-  width: 100%;
   overflow-x: hidden;
-}
-
-body {
   font-family: 'Inter', Arial, sans-serif;
-  background: #0f0f0f; /* Deep black */
+  background: #0f0f0f;
+  /* Deep black */
   color: #ffffff;
+  /* White text */
   line-height: 1.7;
+  scroll-behavior: smooth;
+  padding-top: 80px;
 }
 
-/* =========================
-   SECTION
-========================= */
+/* ===== SECTION ===== */
 .section {
   padding: 100px 10%;
-  scroll-margin-top: 90px; /* prevents navbar overlap */
+  background: transparent;
 }
 
-/* Alternate subtle background */
-.section:nth-of-type(even) {
+/* Alternate section subtle dark */
+.section:nth-child(even) {
   background: #141414;
+  /* Slight dark contrast */
 }
 
-/* =========================
-   CONTAINER
-========================= */
+/* Container */
 .container {
   max-width: 1200px;
   margin: auto;
-  width: 100%;
 }
 
-/* =========================
-   HEADINGS
-========================= */
+/* ===== HEADINGS ===== */
 h1,
 h2,
 h3,
@@ -60,17 +44,17 @@ h4 {
   letter-spacing: 0.5px;
 }
 
-/* Paragraph */
+/* Paragraphs */
 p {
   color: #a1a1aa;
+  /* Soft gray */
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* ===== BUTTON ===== */
 .btn {
   padding: 12px 24px;
   background: #8b5cf6;
+  /* Accent purple */
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -84,35 +68,25 @@ p {
   transform: translateY(-2px);
 }
 
-/* =========================
-   LINKS & LISTS
-========================= */
+/* Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* Lists */
 ul {
   list-style: none;
 }
 
-/* =========================
-   IMAGE SAFETY
-========================= */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
   .section {
     padding: 80px 5%;
   }
+}
 
+@media (max-width: 768px) {
   .contact-container,
   .about-container,
   .hero-container {
